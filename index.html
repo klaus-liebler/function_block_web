@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Function block diagram editor and simulator for Lab@Home - runs entirely in your browser">
+  <title>Function Block Simulator</title>
+  <script type="module" src="./app.ts"></script>
+</head>
+
+<body>
+  <header id="app-header">
+    <div class="header-title">
+      <h1>Function Block Simulator</h1>
+      <p>Design and simulate function block diagrams for Lab@Home &ndash; no hardware required</p>
+    </div>
+    <ul class="header-hints">
+      <li><span aria-hidden="true">⇤</span> Pull out the block library from the tab at the left edge</li>
+      <li><span aria-hidden="true">🖱</span> Click inputs to toggle them, use the mouse wheel to change values</li>
+    </ul>
+  </header>
+  <div id="fbd" class="develop-ui"></div>
+  <footer id="app-footer">
+    <span>&copy; <span id="footer-year"></span> Klaus Liebler, Hochschule Osnabrück</span>
+    <span>Runs entirely in your browser &ndash; diagrams never leave your computer</span>
+    <span>.fbd files are compatible with <a href="https://github.com/klaus-liebler/labathome" target="_blank" rel="noopener">Lab@Home</a></span>
+    <span id="footer-build"></span>
+  </footer>
+  <div id="dialog"></div>
+  <div id="snackbar"></div>
+</body>
+
+</html>

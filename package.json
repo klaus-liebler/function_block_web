@@ -1,0 +1,25 @@
+{
+  "name": "function_block_web",
+  "version": "1.0.0",
+  "description": "Standalone function block diagram (FBD) editor and simulator, without hardware",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "author": "Klaus Liebler, HS Osnabrück",
+  "license": "ISC",
+  "dependencies": {
+    "@klaus-liebler/commons": "file:../npm-packages/@klaus-liebler/commons",
+    "@klaus-liebler/flowchart": "file:../npm-packages/@klaus-liebler/flowchart",
+    "@klaus-liebler/web-components": "file:../npm-packages/@klaus-liebler/web-components",
+    "lit-html": "^3.2.1"
+  },
+  "devDependencies": {
+    "@klaus-liebler/vite-firmware-single-file": "file:../npm-packages/@klaus-liebler/vite-firmware-single-file",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.11"
+  }
+}
